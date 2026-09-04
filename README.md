@@ -1,5 +1,7 @@
 # SQL MCP Server
 
+**[Try the live demo](https://huggingface.co/spaces/Anshul174/sql-mcp-guardrails)** — the guardrail layer running in your browser, no signup.
+
 A read-only SQL question-answering system powered by local Ollama, with guardrails and evals.
 
 ## What it does
@@ -103,6 +105,10 @@ It defends against:
 It does not claim to protect against all SQL injection or application-layer vulnerabilities in a more complex deployment.
 
 Layer ordering matters here: case S9 showed that checking only post-generation SQL is insufficient, since the model can rewrite a payload into something that passes inspection.
+
+## Demo
+
+[`space/`](space/) holds the deployed HuggingFace Space and a Gradio version for local use. See [space/README.md](space/README.md).
 
 ## Notes
 
